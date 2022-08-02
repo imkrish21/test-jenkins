@@ -3,7 +3,7 @@ node {
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
 
-        def customImage = docker.build("Gokul/test-jenkins")
+        def customImage = docker.build("21killerkong/test-jenkins")
 
         /* Push the container to the custom Registry */
         customImage.push()
